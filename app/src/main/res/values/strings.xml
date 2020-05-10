@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TheMovieDb</string>
+    <string name="bookmarks">Bookmarks</string>
+    <string name="search_movie">Enter movie name</string>
+</resources>

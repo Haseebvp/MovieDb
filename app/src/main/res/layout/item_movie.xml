@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorAccent"
+    android:orientation="vertical"
+    app:cardCornerRadius="@dimen/dp_4">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:padding="@dimen/dp_5">
+
+        <ImageView
+            android:id="@+id/poster"
+            android:layout_width="@dimen/dp_150"
+            android:layout_height="@dimen/dp_200"
+            android:src="@drawable/test" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/poster"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_5">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:text="Berserker"
+                android:textColor="@color/titleColor"
+                android:textSize="@dimen/sp_18"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:ellipsize="end"
+                android:maxLines="4"
+                android:text="Buck is a big-hearted dog whose blissful domestic life is turned upside down when he is suddenly uprooted from his California home and transplanted to the exotic wilds of the Yukon during the Gold Rush of the 1890s. As the newest rookie on a mail delivery dog sled team—and later its leader—Buck experiences the adventure of a lifetime, ultimately finding his true place in the world and becoming his own master."
+                android:textColor="@color/descColor"
+                android:textSize="@dimen/sp_14"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/bookmark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_bookmark"
+            android:padding="@dimen/dp_5"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
