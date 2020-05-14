@@ -17,7 +17,7 @@ import javax.inject.Inject
 import javax.inject.Singleton
 
 @Singleton
-class HomeViewModel @Inject constructor(var apiService: ApiService, var application: Application) : ViewModel() {
+class HomeViewModel @Inject constructor(var apiService: ApiService, var movieRepository:MovieRepository) : ViewModel() {
 
     var totalPages = 0
     var page: Int = 1
@@ -31,12 +31,12 @@ class HomeViewModel @Inject constructor(var apiService: ApiService, var applicat
     var searchMovieList: ArrayList<MovieObject?> = ArrayList()
     var search_totalPages = 0
     var search_page: Int = 1
-    var movieRepository:MovieRepository? = null
+//    var movieRepository:MovieRepository? = null
 
     init {
         currentFragment.value = "Home"
         currentView.value = ViewStatus.LOADING
-        movieRepository = MovieRepository(application)
+//        movieRepository = MovieRepository(application)
     }
 
     fun fetchMovieData(isRefresh: Boolean) {

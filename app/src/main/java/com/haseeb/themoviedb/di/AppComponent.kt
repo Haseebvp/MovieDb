@@ -14,7 +14,8 @@ import javax.inject.Singleton
     AppModule::class,
     ViewModelModule::class,
     NetworkModule::class,
-    UiModule::class])
+    UiModule::class,
+    DatabaseModule::class])
 interface AppComponent{
     fun inject(app: MovieApplication)
     @Component.Builder

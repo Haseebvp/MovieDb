@@ -24,6 +24,8 @@ import dagger.android.AndroidInjection
 import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector
 import dagger.android.support.HasSupportFragmentInjector
+import io.reactivex.Completable
+import io.reactivex.schedulers.Schedulers
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
@@ -59,6 +61,9 @@ class MainActivity : AppCompatActivity(), HasSupportFragmentInjector, CoroutineS
         binding.viewmodel = viewModel
         init()
         var movieDatabase = MovieDatabase.getDatabase(applicationContext)
+    }
+    private fun test(){
+
     }
 
     private fun init() {
